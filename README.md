@@ -21,12 +21,12 @@ This repository uses unsupervised machine learning clustering techniques to unde
 
 ### 3. Clustering Cryptocurrencies with K-means
 - The K-means model is initialized and fitted using the optimal k value of 4.
-- Clusters are predicted and a scatter plot is created using hvPlot, setting "24h Price Change (%)" and "7d Price Change (%)" as axes.
+- Clusters are predicted and a scatter plot is created using hvPlot, setting `24h Price Change (%)` and `7d Price Change (%)` as axes.
 
 ### 4. Applying Principal Component Analysis
 - PCA is applied to the original scaled data, reducing features to three principal components.
 - The explained variance is calculated to understand the information retained in the principal components.
-- A new DataFrame with PCA data is created, maintaining "coin_id" as the index.
+- A new DataFrame with PCA data is created, maintaining `coin_id` as the index.
 
 ### 5.  Identifying best k value Using the PCA Data
 - The elbow method is repeated on the PCA data to find the best k value (result was 4).
@@ -34,7 +34,7 @@ This repository uses unsupervised machine learning clustering techniques to unde
 
 ### 6. Clustering Cryptocurrencies with K-means Using the PCA Data
 - The K-means model is applied to the PCA data using `n_clusters=4`.
-- Clusters are predicted, and a scatter plot is generated with "PCA1" and "PCA2" as axes.
+- Clusters are predicted, and a scatter plot is generated with `PCA1` and `PCA2` as axes.
 
 ### Conclusion
 The analysis concludes with insights into the impact of using fewer features (via PCA) on the K-Means clustering.
